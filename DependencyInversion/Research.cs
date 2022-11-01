@@ -40,8 +40,6 @@ namespace DependencyInversion
 
     public class Research
     {
-        private readonly IRelationshipsBrowser _browser;
-
         public Research(IRelationshipsBrowser browser)
         {
             foreach (var p in browser.FindAllChildren("Savindu"))
